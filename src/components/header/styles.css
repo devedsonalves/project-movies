@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #111;
+  padding: 0.5rem 2rem;
+
+  -webkit-box-shadow: 0px 1px 20px 4px #000000;
+  box-shadow: 0px 1px 20px 4px #000000;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.header-logo h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &::before {
+    content: "|";
+    padding: 0 0.3rem;
+  }
+}
+.header-search {
+  display: flex;
+}
+
+.header-search input {
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 1rem 0 0 1rem;
+  border: 0.15rem solid #fff;
+  border-right: 0;
+  background: #111;
+  width: 18rem;
+}
+
+.header-search input::placeholder {
+  color: #777;
+}
+
+.header-search button {
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 0 1rem 1rem 0;
+  border: 0.15rem solid #fff;
+  border-left: 0;
+  background: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-search button {
+  color: #fff;
+}

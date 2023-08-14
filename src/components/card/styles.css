@@ -1,0 +1,41 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  background: #222;
+  padding: 0.75rem;
+  width: 75%;
+  border-radius: 0.5rem;
+  border-bottom: 0.25rem solid #fff;
+}
+
+.card-image {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card-title {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.card-details {
+  background: #000;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.15rem solid transparent;
+  margin-bottom: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: #fff;
+    border: 0.15rem solid #fff;
+  }
+}

@@ -1,0 +1,38 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background: #111;
+  color: #fff;
+  width: 100%;
+  padding: 2rem;
+
+  -webkit-box-shadow: 0px -1px 20px 4px #000000;
+  box-shadow: 0px -1px 20px 4px #000000;
+}
+
+div {
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

@@ -4,12 +4,26 @@
   margin: 0;
 }
 
+html,
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+main {
+  margin: 3rem 2rem;
+}
+
 button {
   cursor: pointer;
 }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    color: #777;
+  }
 }

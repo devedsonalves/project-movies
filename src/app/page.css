@@ -1,0 +1,23 @@
+.loading {
+  padding: 2rem;
+}
+
+.movies {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.movies div {
+  margin: 1rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
