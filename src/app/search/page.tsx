@@ -36,24 +36,26 @@ export default function Search() {
   }, [query]);
 
   return (
-    <section
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <h1 className="title">RESULTADOS PARA: {query?.toUpperCase()}</h1>
-      {movies.length === 0 ? (
-        <p className="loading">Carregando...</p>
-      ) : (
-        <section className="movies">
-          {movies.map((movie) => (
-            <Card movie={movie} />
-          ))}
-        </section>
-      )}
-    </section>
+    <>
+      <section
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <h1 className="title">RESULTADOS PARA: {query?.toUpperCase()}</h1>
+        {movies.length === 0 ? (
+          <p className="loading">Carregando...</p>
+        ) : (
+          <section className="movies">
+            {movies.map((movie) => (
+              <Card movie={movie} />
+            ))}
+          </section>
+        )}
+      </section>
+    </>
   );
 }

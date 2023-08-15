@@ -1,10 +1,10 @@
 import { Roboto } from "next/font/google";
-import type { Metadata } from "next";
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 import "./globals.css";
+import type { Metadata } from "next";
 
 const roboto = Roboto({
   subsets: ["latin"],

@@ -6,6 +6,7 @@ import axios from "axios";
 import Card from "@/components/card";
 
 import "./page.css";
+import Head from "next/head";
 
 export default function Home() {
   const [topMovies, setTopMovies] = useState([]);
@@ -16,7 +17,7 @@ export default function Home() {
       url: "https://api.themoviedb.org/3/movie/top_rated",
       headers: {
         accept: "application/json",
-        Authorization: process.env.AUTH_KEY,
+        Authorization: "Bearer " + process.env.AUTH_KEY,
       },
     };
 
@@ -31,6 +32,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Search | Best Movies</title>
+      </Head>
       <h1 className="title">FILMES MELHORES AVALIADOS</h1>
       {topMovies.length === 0 ? (
         <p className="loading">Carregando...</p>
