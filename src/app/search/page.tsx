@@ -22,8 +22,7 @@ export default function Search() {
       },
       headers: {
         accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NzM5MWRlNzgxZjQyMjIwOGVlNjY1ZmQzZjBmZTkzMSIsInN1YiI6IjY0ZDY3ZjgwZDEwMGI2MDBhZGEwYjRkNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8ZXwcBJ6nUAQ5-IT_u5ajl7YyxYvpmn6QN5sTd43gRg",
+        Authorization: process.env.AUTH_KEY,
       },
     };
 
